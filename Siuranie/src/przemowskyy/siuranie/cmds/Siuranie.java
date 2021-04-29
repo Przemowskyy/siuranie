@@ -24,6 +24,7 @@ public class Siuranie implements CommandExecutor {
 				ps.sendMessage("§7Gracz §c" + sender.getName() + " §7Siura");
 			}
 			sender.sendMessage("§eSiurasz ♥");
+			Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "give " + sender.getName() + " potion 1 name:&e&lBootle_Of_Siuranie");
 		} else {
 			sender.sendMessage("§cNie posiadasz siura więc nie możesz siurać ;c");
 		}
